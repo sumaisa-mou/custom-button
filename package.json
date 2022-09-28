@@ -1,6 +1,5 @@
 {
   "name": "@sumaisa-mou/custom-button",
-  "private": true,
   "version": "0.0.1",
   "main": "./dist/custom-buttom.umd.js",
   "module": "./dist/custom-button.es.js",
