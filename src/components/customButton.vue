@@ -1,7 +1,7 @@
 <template>
   {{ msg }}
     <button class="custom-button">
-        <slot/>
+      Button-<slot/>
     </button>
 </template>
 <script>
