@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixed foldouts in Dutch translation
+- Fixed foldouts in Dutch translation IN CHANGELOG
 
 ## [0.0.1] - 2019-02-15
 
@@ -40,7 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- New visual identity by [@tylerfortune8](https://github.com/tylerfortune8).
+- New visual identity by changelog
 - Version navigation.
 - Links to latest released version in previous versions.
 - "Why keep a changelog?" section.
