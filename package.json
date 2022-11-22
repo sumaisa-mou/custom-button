@@ -1,7 +1,7 @@
 {
   "name": "@sumaisa-mou/custom-button",
-  "version": "0.1.4",
-  "main": "./dist/custom-buttom.umd.js",
+  "version": "0.1.5",
+  "main": "index.js",
   "module": "./dist/custom-button.es.js",
   "exports": {
     ".": {
