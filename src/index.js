@@ -1,7 +1,3 @@
-import CustomButton from "./components/CustomButton.vue";
+import customButton from "./components/CustomButton.vue";
 
-export default {
-    install: (app, options) => {
-        app.component("CustomButton", CustomButton);
-    }
-}
+export const CustomButton = customButton;
