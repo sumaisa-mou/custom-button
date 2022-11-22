@@ -1,18 +1,7 @@
 {
   "name": "@sumaisa-mou/custom-button",
   "version": "0.1.0",
-  "main": "./dist/custom-buttom.umd.js",
-  "module": "./dist/custom-button.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/custom-button.es.js",
-      "require": "./dist/custom-button.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "repository": {
     "url": "https://github.com/sumaisa-mou/custom-button.git"
   },
