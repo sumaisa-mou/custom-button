@@ -1,3 +1,1 @@
-import customButton from "./components/CustomButton.vue";
-
-export const CustomButton = customButton;
+export {default} from "./components/CustomButton.vue";
