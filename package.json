@@ -1,8 +1,8 @@
 {
   "name": "@sumaisa-mou/custom-button",
-  "version": "0.1.5",
-  "main": "index.js",
-  "module": "./dist/custom-button.es.js",
+  "version": "0.1.8",
+  "main": "./dist/custom-buttom.umd.js",
+  "module": "index.js",
   "exports": {
     ".": {
       "import": "./dist/custom-button.es.js",
