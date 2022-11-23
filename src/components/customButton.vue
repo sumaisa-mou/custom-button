@@ -10,6 +10,9 @@ export default {
     msg: {
       type: String,
     }
+  },
+  created() {
+    console.log('test');
   }
 }
 </script>
