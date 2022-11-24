@@ -1,10 +1,12 @@
 <template>
   {{ msg }}
     <button class="custom-button">
-      Button-<slot/>
+      Btn<slot/>
     </button>
 </template>
 <script>
+
+import {getCurrentInstance} from "vue";
 
 export default{
   props: {
@@ -13,9 +15,8 @@ export default{
     }
   },
   mounted() {
-    const self = this;
     const proxy1 = new Proxy(self, {})
-    console.log(this);
+    console.log(getCurrentInstance());
     console.log(this.msg);
     console.log({...proxy1});
   }
