@@ -5,7 +5,9 @@
     </button>
 </template>
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   props: {
     msg: {
       type: String,
@@ -14,7 +16,7 @@ export default {
   created() {
     console.log(this);
   }
-}
+})
 </script>
 <style scoped>
  .custom-button{
