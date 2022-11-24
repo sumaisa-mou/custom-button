@@ -15,8 +15,10 @@ export default defineComponent({
   },
   mounted() {
     const self = this;
+    const proxy1 = new Proxy(this)
     console.log(self);
     console.log(this.$root);
+    console.log(proxy1);
   }
 })
 </script>
