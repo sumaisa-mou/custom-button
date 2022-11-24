@@ -15,6 +15,7 @@ export default{
   mounted() {
     const self = this;
     const proxy1 = new Proxy(self, {})
+    console.log(this);
     console.log(this.msg);
     console.log({...proxy1});
   }
