@@ -13,8 +13,10 @@ export default defineComponent({
       type: String,
     }
   },
-  created() {
-    console.log(this);
+  mounted() {
+    const self = this;
+    console.log(self);
+    console.log(this.$root);
   }
 })
 </script>
