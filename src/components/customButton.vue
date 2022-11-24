@@ -1,24 +1,54 @@
 <template>
   {{ msg }}
-    <button class="custom-button">
-      Btn<slot/>
-    </button>
+<!--    <button class="custom-button">-->
+<!--      Btn<slot/>-->
+<!--    </button>-->
+  <iframe
+      ref="customizerIframe"
+      :src="iframeSource"
+  ></iframe>
 </template>
 <script>
 
-import {getCurrentInstance} from "vue";
+import {createApp} from "vue";
+import Iframe from "../js/Iframe";
 
 export default{
   props: {
     msg: {
       type: String,
+    },
+    iframeSource: String,
+  },
+  methods: {
+    handleMount() {
+      alert('HI');
+      console.log(this.contentWindow.document.getElementById(
+          "wemail-customizer"
+      ));
+      // iframeInstance.mount(
+      //     this.getElementById(
+      //         "wemail-customizer"
+      //     )
+      // );
     }
   },
   mounted() {
-    const proxy1 = new Proxy(self, {})
-    console.log(getCurrentInstance());
-    console.log(this.msg);
-    console.log({...proxy1});
+    const vm = this;
+    const iframeInstance = createApp(Iframe(vm));
+    const iframe = this.$refs.customizerIframe;
+    //
+    // iframe.addEventListener("load", vm.handleMount);
+    iframe.addEventListener("load", () => {
+      console.log(iframe.contentWindow.document.getElementById(
+          "wemail-customizer"
+      ));
+      iframeInstance.mount(
+          iframe.contentWindow.document.getElementById(
+              "wemail-customizer"
+          )
+      );
+    });
   }
 }
 </script>
